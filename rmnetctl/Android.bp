@@ -1,17 +1,9 @@
-cc_library_headers {
-    name: "librmnetctl_headers",
-    export_include_dirs: ["inc"],
-    vendor: true,
-}
-
 cc_defaults {
     name: "librmnetctl_defaults",
     cflags: [
         "-Wall",
         "-Werror",
     ],
-    header_libs: ["librmnetctl_headers"],
-    vendor: true,
 }
 
 cc_library_shared {
